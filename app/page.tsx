@@ -1,5 +1,7 @@
 "use client";
 
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useChat } from "ai/react";
 
 export default function Chat() {
@@ -29,8 +31,8 @@ export default function Chat() {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <input
-          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
+        <Textarea
+          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border  shadow-2xl rounded hover:shadow-xl"
           value={input}
           placeholder="Say something..."
           onChange={handleInputChange}
