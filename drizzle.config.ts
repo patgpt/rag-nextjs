@@ -1,5 +1,6 @@
 import type { Config } from "drizzle-kit";
 import { env } from "@/lib/env.mjs";
+import { config } from "dotenv";
 
 export default {
   schema: "./lib/db/schema",
@@ -9,3 +10,7 @@ export default {
     url: env.DATABASE_URL,
   }
 } satisfies Config;
+
+
+
+// src/db.ts
